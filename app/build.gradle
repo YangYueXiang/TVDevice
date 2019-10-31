@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.boe.tvdevice"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    compileOptions {
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //加载动画 https://github.com/81813780/AVLoadingIndicatorView
+    implementation 'com.wang.avi:library:2.1.3'
+
+    //沉浸式
+    implementation 'com.gyf.immersionbar:immersionbar:2.3.2-beta01'
+
+    // ButterKnife注解库：https://github.com/JakeWharton/butterknife
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //网络请求框架okgo(基于okhttp的二次封装)
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.readystatesoftware.chuck:library:1.0.4'
+    implementation 'com.lzy.net:okserver:2.0.5'
+    //Gson 解析工具
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.youth.banner:banner:1.4.10'  //最新版本
+
+//基于Glide V4.9.0封装的图片加载库，可以监听加载图片时的进度
+    implementation 'com.sunfusheng:GlideImageView:2.1.0'
+
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_144"
+        android:layout_height="@dimen/dp_120"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_116"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+           />
+
+        <ImageView
+            android:layout_width="@dimen/dp_13"
+            android:layout_height="@dimen/dp_13"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/icon_pic" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_pictureplay_or_delete"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_36"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:background="#8D050505"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/iv_pictureplay"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/dp_8"
+                    android:layout_height="@dimen/dp_10"
+                    android:src="@drawable/icon_play" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/iv_picturedelete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_10"
+                    android:src="@drawable/icon_delete" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_picture_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="#ffffff"
+        android:text="one"
+        android:textSize="@dimen/sp_8" />
+</LinearLayout>

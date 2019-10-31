@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="loadno">#BFBFBF</color>
+    <color name="loadyes">#57CDF0</color>
+    <color name="downing">#3FBCE0 </color>
+    <color name="howtime">#3FBCE0</color>
+    <color name="boldupload">#00A3F1</color>
+    <color name="background">#000A1B</color>
+    <color name="backgroundbutton">#15FFFFFF</color>
+    <color name="progress">#ffffff</color>
+    <color name="dialog_btn_true">#E6E6E6</color>
+    <color name="dialog_btn_false">#ffffff</color>
+</resources>

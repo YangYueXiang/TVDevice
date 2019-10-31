@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <com.boe.tvdevice.customView.MyView
+            android:layout_width="@dimen/dp_66"
+            android:layout_height="@dimen/dp_66"
+            app:indicatorName="BallSpinFadeLoaderIndicator"
+            style="@style/AVLoadingIndicatorView.Large"
+            app:indicatorColor = "#4DDCE6"
+            />
+        <TextView
+            android:text="LOADING"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginTop="@dimen/dp_14"
+            android:textColor="#1397BD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100">
+            <com.boe.tvdevice.customView.DonloadView
+                android:id="@+id/start"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100" />
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_14"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_36"
+            android:text="展示节目下载中，请稍后操作......"
+            android:textColor="@color/downing"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_shengyutime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_13"
+            android:text="0KB/0KB"
+            android:textColor="@color/howtime"
+            android:textSize="@dimen/sp_8" />
+
+        <Button
+            android:id="@+id/btn_into"
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_46"
+            android:background="@drawable/tiaoguo"
+            android:text="跳过更新"
+            android:textColor="@color/boldupload"
+            android:textSize="@dimen/sp_8" />
+    </LinearLayout>
+
+</LinearLayout>

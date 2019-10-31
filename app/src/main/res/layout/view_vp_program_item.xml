@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.boe.tvdevice.customView.MyGridView
+        android:id="@+id/gv_program"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@color/background"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/dp_10"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/dp_16"/>
+
+</LinearLayout>

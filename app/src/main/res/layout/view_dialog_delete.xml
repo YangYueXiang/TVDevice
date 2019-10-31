@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_27"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_27"
+        android:gravity="center"
+        android:textColor="#606266"
+        android:textSize="@dimen/sp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_29"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_left_selector"
+            android:gravity="center"
+            android:textColor="#09AAD4"
+            android:textSize="@dimen/sp_9" />
+
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_29"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_right_selector"
+            android:gravity="center"
+            android:textColor="#F02929"
+            android:textSize="@dimen/sp_9" />
+    </LinearLayout>
+
+</LinearLayout>

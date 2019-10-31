@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".activity.ListShowActivity">
+    <androidx.viewpager.widget.ViewPager
+        android:background="@color/background"
+        android:id="@+id/vp_program"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/iv_program_left"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dp_154"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:src="@drawable/icon_left" />
+
+    <ImageView
+        android:id="@+id/iv_program_right"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_154"
+        android:layout_marginRight="@dimen/dp_8"
+        android:src="@drawable/icon_right" />
+</RelativeLayout>
